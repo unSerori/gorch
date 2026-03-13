@@ -1,0 +1,22 @@
+package service
+
+import (
+	"fmt"
+
+	"mypkg/internal/repository"
+)
+
+type {{ .Name }}Service struct{
+	repo *repository.{{ .Name }}Repository
+
+	// 依存するRepositoryを定義、追加。
+}
+
+func New{{ .Name }}Service(repo *repository.{{ .Name }}Repository) *{{ .Name }}Service {
+	fmt.Println("{{ .Name }}Service initialized.")
+	return &{{ .Name }}Service{repo: repo}
+}
+
+func (srv *{{ .Name }}Service) Method() {
+	// 処理
+}

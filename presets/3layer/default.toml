@@ -1,0 +1,3 @@
+PackageName = "mypkg"
+Name = "User"
+ORMInstance = "gorm.DB"
