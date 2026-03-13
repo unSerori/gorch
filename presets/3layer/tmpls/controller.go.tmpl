@@ -1,0 +1,34 @@
+package {{ .PackageName }}
+
+import (
+	"fmt"
+
+	"mypkg/internal/service"
+)
+
+type {{ .Name }}Controller struct {
+	srv *service.{{ .Name }}Service
+
+	// 依存するServiceを定義、追加。
+}
+
+func New{{ .Name }}Controller(srv *service.{{ .Name }}Service) *{{ .Name }}Controller {
+	fmt.Println("{{ .Name }}Controller initialized.")
+	return &{{ .Name }}Controller{srv: srv}
+}
+
+func (ctrl *{{ .Name }}Controller) Method() {
+	// 処理
+}
+
+
+
+
+
+
+
+
+
+
+
+

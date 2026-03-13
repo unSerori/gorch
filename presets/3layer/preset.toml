@@ -1,0 +1,20 @@
+# メタ情報
+name = "3layer"
+version = "0.1.0"
+description = "いったん開発用の3layer。各層は構造体でのDI。"
+#TODO: 継承設定
+
+# TODO: 命名規則
+
+# ディレクトリ構造 TODO: outのファイル名にプレースホルダー？
+[[files]]
+tmpl = "controller.go.tmpl"
+out = "internal/controller/controller.go"
+[[files]]
+tmpl = "service.go.tmpl"
+out = "internal/service/service.go"
+[[files]]
+tmpl = "data_access.go.tmpl"
+out = "internal/repository/data_access.go"
+
+# カスタム変数
